@@ -1,0 +1,47 @@
+body.grooming-bg {
+    background: url('../resources/images/grooming/background.png') no-repeat center center/cover, var(--color-light);
+    min-height: 100vh;
+    position: relative;
+}
+
+.grooming-content {
+    min-height: 60vh;
+    padding-bottom: 120px;
+}
+
+.grooming-box {
+    background: rgba(255,255,255,0.7);
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    margin-bottom: 1rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grooming-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-dark);
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.grooming-section {
+    color: var(--color-dark);
+    font-size: 1.1rem;
+}
+
+@media (max-width: 991.98px) {
+    .grooming-box {
+        margin-bottom: 2rem;
+        padding: 1.5rem 0.5rem;
+    }
+} 
+
+.dropdown-toggle {
+    background: var(--color-gold);
+    color: var(--color-dark);
+}

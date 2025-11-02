@@ -1,0 +1,33 @@
+/* About page background with right-aligned image and light overlay */
+.about-bg {
+    background: url('../resources/images/about/background.png') no-repeat center center/cover, var(--color-light);
+    min-height: 100vh;
+    position: relative;
+}
+
+.about-content-container {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content-box {
+    background: rgba(255,255,255,0.7);
+    border-radius: 20px;
+    padding: 2rem 2.5rem;
+    max-width: 480px;
+    margin: 2rem 0;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+.about-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+.about-icon {
+    font-size: 1.2em;
+    vertical-align: middle;
+}

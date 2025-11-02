@@ -1,0 +1,236 @@
+:root {
+    --color-gold: #C4A35A;
+    --color-dark: #4A4A4A;
+    --color-light: #F8F4F1;
+    --color-white: #fff;
+}
+
+body {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+.header-bar, .footer-bar {
+    background-color: var(--color-gold);
+    color: var(--color-white);
+}
+
+.header-bar {
+    background: var(--color-gold);
+    width: 100%;
+    padding: 32px 0 16px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.header-bar h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 400;
+    text-shadow: 0 4px 16px rgba(0,0,0,0.6);
+    letter-spacing: 1px;
+    margin: 0;
+    font-family: 'Quicksand', Arial, sans-serif;
+}
+
+.header-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.header-link:hover, .header-link:focus {
+    text-decoration: none;
+}
+
+.nav-btn {
+    background: #444;
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    padding: 8px 28px;
+    margin: 8px 12px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+}
+
+@media (min-width: 768px) {
+    .nav-btn {
+        display: inline-block;
+        width: auto;
+        max-width: none;
+    }
+}
+
+.nav-btn:hover,
+.nav-btn:focus {
+    background: var(--color-gold);
+    color: var(--color-dark);
+    text-decoration: none;
+}
+
+.nav-btn.active,
+.nav-btn[aria-current="page"] {
+    background: var(--color-gold);
+    color: var(--color-dark);
+    text-decoration: none;
+    pointer-events: none;
+}
+
+.highlight-box {
+    background: var(--color-gold);
+    border-radius: 16px;
+    padding: 12px 0;
+    margin: 0 auto 2rem auto;
+    max-width: 680px;
+}
+
+.slogan {
+    color: #fff;
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+
+.footer-bar {
+    background: var(--color-gold);
+    height: 56px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.footer-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-icon img {
+    max-width: 32px;
+    max-height: 32px;
+}
+
+.footer-bar a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.footer-bar svg {
+    width: 100%;
+    height: 100%;
+    fill: var(--color-dark);
+    transition: fill 0.2s;
+}
+
+.footer-bar a:hover svg {
+    fill: var(--color-white);
+}
+
+.dropdown {
+    display: flex;
+    justify-content: center;
+}
+
+/* Custom dropdown styles for navbar */
+.dropdown-menu {
+    background: var(--color-gold);
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    min-width: 180px;
+    padding: 0;
+}
+
+.dropdown-item {
+    color: var(--color-dark);
+    font-weight: 600;
+    font-size: 1.05rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item.active {
+    background: #444;
+    color: #fff;
+}
+
+.dropdown-toggle::after {
+    margin-left: 0.5em;
+    vertical-align: middle;
+}
+
+.btn-gold {
+    background: var(--color-gold);
+    color: var(--color-dark);
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    padding: 0.5rem 1.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: background 0.2s, color 0.2s;
+}
+.btn-gold:hover, .btn-gold:focus {
+    background: #bfa14a;
+    color: #fff;
+}
+
+.booking-modal-content {
+    background: rgba(255,255,255,0.85);
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+@media (max-width: 767.98px) {
+  .dropdown {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .dropdown-menu {
+    width: 100% !important;
+    max-width: 400px !important;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    margin-top: 0.5rem;
+    padding: 0;
+  }
+  .dropdown-item {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: left;
+    max-width: 400px !important;
+  }
+}
+
+/* Right-align the dropdown arrow on the Services button */
+.nav-btn.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    padding-right: 2.5em;
+}
+
+.nav-btn.dropdown-toggle::after {
+    position: absolute;
+    right: 1.2em;
+    margin-left: 0;
+} 

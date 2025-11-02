@@ -1,0 +1,50 @@
+body.faq-bg {
+    background: url('../resources/images/faq/background.png') no-repeat center center/cover, var(--color-light);
+    min-height: 100vh;
+    position: relative;
+}
+
+.faq-content {
+    min-height: 60vh;
+    padding-bottom: 120px;
+}
+
+.faq-box {
+    background: rgba(255,255,255,0.7);
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    margin-bottom: 1rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.faq-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-dark);
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.faq-section-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-dark);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.faq-section {
+    color: var(--color-dark);
+    font-size: 1.05rem;
+}
+
+@media (max-width: 991.98px) {
+    .faq-box {
+        margin-bottom: 2rem;
+        padding: 1.5rem 0.5rem;
+    }
+} 

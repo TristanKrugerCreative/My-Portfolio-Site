@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furry Friends</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <!-- Google Fonts: Quicksand for header, Raleway for body -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Bar -->
+    <div class="header-bar text-center py-3 mb-3">
+        <h1 class="mb-0"><a href="index.html" class="header-link">Furry Friends</a></h1>
+    </div>
+
+    <!-- Navigation -->
+    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mb-3 nav-responsive">
+        <a href="about.html" class="nav-btn">About us</a>
+        <div class="dropdown">
+            <a class="nav-btn dropdown-toggle" href="services.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <li><a class="dropdown-item" href="services.html">All services</a></li>
+                <li><a class="dropdown-item" href="grooming.html">Grooming</a></li>
+                <li><a class="dropdown-item" href="pet-hotel.html">Pet Hotel</a></li>
+            </ul>
+        </div>
+        <a href="gallery.html" class="nav-btn">Gallery</a>
+        <a href="contact.html" class="nav-btn">Contact</a>
+        <a href="faq.html" class="nav-btn">FAQs</a>
+    </div>
+
+    <!-- Slogan -->
+    <div class="highlight-box text-center py-2 mb-4">
+        <span class="slogan">Because Every Paw Deserves Perfection</span>
+    </div>
+
+    <!-- Main Image and Discount -->
+    <div class="container mb-4">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-3 mb-md-0">
+                <a href="#bookingModal" 
+                   class="discount-box d-block text-decoration-none text-gold"
+                   data-bs-toggle="modal"
+                   role="button"
+                   tabindex="0"
+                   aria-label="Book now for 15% discount">
+                    BOOK NOW for<br>
+                    15% Discount!
+                </a>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="resources/images/home/main-image.png" alt="Reception with pets" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Carousel -->
+    <div class="container mb-5 mt-5">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="resources/images/home/gallery-1.png" class="d-block w-100 gallery-img" alt="Gallery 1">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="resources/images/home/gallery-2.png" class="d-block w-100 gallery-img" alt="Gallery 2">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="resources/images/home/gallery-3.png" class="d-block w-100 gallery-img" alt="Gallery 3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="resources/images/home/gallery-4.png" class="d-block w-100 gallery-img" alt="Gallery 4">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="resources/images/home/gallery-5.png" class="d-block w-100 gallery-img" alt="Gallery 5">
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="resources/images/home/gallery-6.png" class="d-block w-100 gallery-img" alt="Gallery 6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="carousel-indicators mt-3">
+                        <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-bar fixed-bottom">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
+                <div class="footer-icon d-flex justify-content-center align-items-center mx-3">
+                    <a href="https://www.facebook.com/" aria-label="Facebook">
+                        <img src="resources/svgs/facebook.svg" alt="Facebook">
+                    </a>
+                </div>
+                <div class="footer-icon d-flex justify-content-center align-items-center mx-3">
+                    <a href="https://www.instagram.com/" aria-label="Instagram">
+                        <img src="resources/svgs/instagram.svg" alt="Instagram">
+                    </a>
+                </div>
+                <div class="footer-icon d-flex justify-content-center align-items-center mx-3">
+                    <a href="https://www.youtube.com/" aria-label="YouTube">
+                        <img src="resources/svgs/youtube.svg" alt="YouTube">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content booking-modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title w-100 text-center" id="bookingModalLabel">🐾 <b>Book Now</b></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="bookingFullName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="bookingFullName" required>
+              </div>
+              <div class="mb-3">
+                <label for="bookingPhone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="bookingPhone" required>
+              </div>
+              <div class="mb-3">
+                <label for="bookingEmail" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="bookingEmail" required>
+              </div>
+              <div class="mb-3">
+                <label for="bookingPetName" class="form-label">Pet's Name</label>
+                <input type="text" class="form-control" id="bookingPetName" required>
+              </div>
+              <div class="mb-3">
+                <label for="bookingService" class="form-label">Service Required</label>
+                <select class="form-select" id="bookingService" required>
+                  <option value="">Select a service</option>
+                  <option value="Grooming">Grooming</option>
+                  <option value="Pet Hotel">Pet Hotel</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="bookingDate" class="form-label">Preferred Date</label>
+                <input type="date" class="form-control" id="bookingDate" required>
+              </div>
+              <div class="mb-3">
+                <label for="bookingNotes" class="form-label">Additional Notes</label>
+                <textarea class="form-control" id="bookingNotes" rows="2" placeholder="e.g., breed, size, any special needs or requests"></textarea>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="bookingVaccinated" required>
+                <label class="form-check-label" for="bookingVaccinated">
+                  I confirm my pet is up-to-date with vaccinations
+                </label>
+              </div>
+              <button type="submit" class="btn btn-gold w-100">Submit Booking Request</button>
+              <div class="form-text mt-2 text-center">Note: We'll contact you to confirm the details and availability within 24 hours.</div>
+            </form>
+
+            <!-- Success Message -->
+            <div id="bookingSuccess" class="text-center d-none">
+              <h5 class="mb-3">🎉 Booking Submitted!</h5>
+              <p>Thank you for your booking. We'll contact you within 24 hours to confirm the details and availability.</p>
+              <a href="index.html" class="btn btn-gold mt-2">Back to Home</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+    // Booking form validation and feedback
+    document.addEventListener('DOMContentLoaded', function() {
+      var bookingModal = document.getElementById('bookingModal');
+      if (bookingModal) {
+        var form = bookingModal.querySelector('form');
+        var successMsg = document.getElementById('bookingSuccess');
+        
+        // Form validation
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          if (form.checkValidity() === false) {
+            form.classList.add('was-validated');
+            return;
+          }
+          form.classList.remove('was-validated');
+          form.classList.add('d-none');
+          successMsg.classList.remove('d-none');
+        });
+        
+        // Reset form and feedback on close
+        bookingModal.addEventListener('hidden.bs.modal', function () {
+          form.reset();
+          form.classList.remove('was-validated', 'd-none');
+          successMsg.classList.add('d-none');
+        });
+      }
+    });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
